@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Project title</title>
+	<!-- Custom google font -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css'>
+	<link media="all" rel="stylesheet" type="text/css" href="css/main.css" />
+    <link media="all" rel="stylesheet" type="text/css" href="css/header.css" />
+    <link media="all" rel="stylesheet" type="text/css" href="css/footer.css" />
+    <link media="all" rel="stylesheet" type="text/css" href="css/slider.css" />
+    <link media="all" rel="stylesheet" type="text/css" href="css/intro.css" />
+    <script src="app.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<header id="header" class="header">
+            <div class="headerWrap">
+                <div class="logo">
+                    <img src="images/logo.png">
+                </div>
+                <nav class="navigation" role='navigation'>
+                    <div class="topNav">
+                        <a href="#">HOME</a>
+                        <a href="#">ABOUT</a>
+                        <a href="#">SERVICES</a>
+                        <a href="#" id="portfolioButton" onclick="selector()">
+                            PORTFOLIO
+                            <div id="cSelector" class="cSelector" hidden>
+                               <div class="cOption">
+                                   Portfolio 2 colum page
+                               </div>
+                               <div class="cOption">
+                                   Portfolio 2 colum page
+                               </div>
+                               <div class="cOption">
+                                   Portfolio 2 colum page
+                               </div>
+                            </div>
+                        </a>
+                        <a href="#">BLOG</a>
+                        <a href="#">FEATURES</a>
+                        <a href="#">CONTACTS</a>
+                        <a href="#">&#128269;</a>
+                    </div>
+                </nav>
+                <div id="menuBtn" class="menuBtn">&#9776;</div>
+            </div>
+		</header>
+
+		<main id="main" role="main">
+
+            <section class="sliderWrap">
+
+                <div id="sliderButton2" class="sliderButton2" onclick="slideLeft()">
+                    <img src="images/2.png">
+                </div>
+                <div id="sliderButton1" class="sliderButton1" onclick="slideRight()">
+                    <img src="images/1.png">
+                </div>
+
+                <div id="slide0" class="slider">
+                    <div class="vestibulumMaecenasWrap">
+                        <div id="vestibulumWrap0" class="vestibulumWrap">
+                            <h2 class="vestibulumText">
+                                VESTIBULUM
+                            </h2>
+                        </div>
+                        <div id="maecenasWrap0" class="maecenasWrap">
+                            <p class="maecenasTincidunt">
+                                Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="slide1" class="slider">
+                    <div class="vestibulumMaecenasWrap top">
+                        <div id="vestibulumWrap1" class="vestibulumWrap" hidden>
+                            <h2 class="vestibulumText">
+                                1) VESTIBULUM
+                            </h2>
+                        </div>
+                        <div id="maecenasWrap1" class="maecenasWrap" hidden>
+                            <p class="maecenasTincidunt">
+                                1) Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="slide2" class="slider" >
+                    <div class="vestibulumMaecenasWrap top">
+                        <div id="vestibulumWrap2" class="vestibulumWrap" hidden>
+                            <h2 class="vestibulumText">
+                                2) VESTIBULUM
+                            </h2>
+                        </div>
+                        <div id="maecenasWrap2" class="maecenasWrap" hidden>
+                            <p class="maecenasTincidunt">
+                                2) Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="intro">
+
+                <div class="introWrap">
+                    <div class="introText">
+                        <h2 class="main">
+                            Some of our top services
+                        </h2>
+                        <div class="sub">
+                            Ut eleifend libero sed neque rhoncus consequat. Maecenas tincidunt,augue et rutrum
+                            condimentum, libero lectus mattis orci, ut commodo.
+                        </div>
+                    </div>
+                    <div class="introButton">
+                        <a href="#" class="button">view more</a>
+                    </div>
+                </div>
+
+            </section>
+            <div id="content" class="content"></div>
+			<aside role="aside"></aside>
+		</main>
+
+		<footer id="footer">
+            <div class="firstLine"></div>
+            <div class="secondLine"></div>
+        </footer>
+		</div>  
+	</body>
+</html>
